@@ -30,3 +30,4 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.15.0/geckod
 RUN tar -xvf geckodriver-v0.15.0-linux64.tar.gz
 RUN cp geckodriver /usr/bin
 RUN yum -y install firefox
+RUN pip install PyMySQL
