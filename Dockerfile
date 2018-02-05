@@ -34,5 +34,5 @@ RUN pip install PyMySQL
 WORKDIR /usr/src/app
 RUN unset LC_ALL LANG LC_CTYPE LC_COLLATE LC_NUMERIC LC_TIME LC_MONETARY LC_MESSAGES
 RUN yum -y reinstall glibc-common
-RUN export LC_ALL=en_US.utf8
-RUN export LANG=en_US.utf8
+ENV LC_ALL=en_US.utf8
+ENV LANG=en_US.utf8
